@@ -6,13 +6,7 @@
 }
 
 body {
-  background-color: #5b028b;
-  background-image: linear-gradient(
-    225deg,
-    #462657 0%,
-    #1e1c2a 50%,
-    #5e397f 100%
-  );
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 .flex {
@@ -96,25 +90,25 @@ nav.menu-desktop ul li a:hover {
 
 /* MENU MOBILE */
 
-.btn-abrir-menu ion-icon{
-  padding: 0 30px;
+.btn-abrir-menu ion-icon {
+  padding: 0px 40px 30px;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   cursor: pointer;
 }
 
-.btn-abrir-menu{
+.btn-abrir-menu {
   display: none;
-  
 }
 
 .menu-mobile {
+  font-size: 14px;
   background-color: #5c0035;
   background-image: linear-gradient(
     225deg,
     #000000 0%,
-    rgb(0, 0, 0) 40%,
-    #450057 100%
+    #18182b 40%,
+    #221b68 100%
   );
   height: 100vh;
   position: fixed;
@@ -126,11 +120,11 @@ nav.menu-desktop ul li a:hover {
   transition: 0.3s;
 }
 
-.menu-mobile.abrir-menu{
-  width: 70%;
+.menu-mobile.abrir-menu {
+  width: 65%;
 }
 
-.menu-mobile.abrir-menu ~.overlay-menu{
+.menu-mobile.abrir-menu ~ .overlay-menu {
   display: block;
 }
 
@@ -150,21 +144,21 @@ nav.menu-desktop ul li a:hover {
   color: white;
 }
 
-.menu-mobile .btn-fechar{
-  padding: 50px 0 20px 50px
+.menu-mobile .btn-fechar {
+  padding: 30px 0 0px 30px;
 }
 
-.menu-mobile .btn-fechar ion-icon{
+.menu-mobile .btn-fechar ion-icon {
   color: white;
-  font-size: 50px;
-  transform: 0.5s
+  font-size: 35px;
+  transform: 0.5s;
 }
 
-.menu-mobile .btn-fechar ion-icon:hover{
+.menu-mobile .btn-fechar ion-icon:hover {
   transform: scale(1.2);
 }
 
-.overlay-menu{
+.overlay-menu {
   background-color: rgba(0, 0, 0, 0.459);
   width: 100%;
   height: 100%;
@@ -174,7 +168,6 @@ nav.menu-desktop ul li a:hover {
   z-index: 88888;
   display: none;
 }
-
 
 /* ESTILO DO TOPO DO SITE */
 
@@ -195,6 +188,7 @@ section.topo-site .flex {
 }
 
 .topo-site p {
+  text-align: justify;
   color: white;
   margin: 40px 0;
   font-size: 18px;
@@ -262,7 +256,6 @@ section.sobre .flex {
   gap: 80px;
 }
 
-
 .sobre .txt-sobre {
   color: white;
 }
@@ -283,12 +276,11 @@ section.sobre .flex {
   text-align: justify;
 }
 
-.sobre .img-sobre img{
+.sobre .img-sobre img {
   border-radius: 40px;
 }
 
 .sobre .img-sobre img:hover {
-  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -308,7 +300,6 @@ section.sobre .flex {
   background: rgba(255, 255, 255, 0.07);
   color: white;
 }
-
 
 /* PORTIFOLIO */
 
@@ -376,7 +367,7 @@ footer {
   color: var(--color-neutral-40);
 }
 
-footer .btn-social ion-icon{
+footer .btn-social ion-icon {
   margin: 0 5px 0 0;
   font-size: 28px;
   color: white;
@@ -517,13 +508,24 @@ footer .btn-social ion-icon:hover {
   display: none;
 }
 
+
+
+
 /* RESPONSIVO */
 
 @media screen and (max-width: 1020px) {
 
-  .btn-abrir-menu{
+  header {
+    padding: 50px 4% 0;
+  }
+
+  .logo{
+    padding: 0 0 30px 40px;
+  }
+
+  .btn-abrir-menu {
     display: block;
-}
+  }
 
   .flex {
     flex-direction: column;
@@ -543,29 +545,53 @@ footer .btn-social ion-icon:hover {
   }
 
   .topo-site h1 {
+    text-align: center;
     font-size: 30px;
     line-height: 40px;
   }
 
   .topo-site .img-topo-site img {
-    width: 350px;
+    padding: 0;
+    width: 300px;
   }
 
   section.especialidades {
-    padding: 40px 8%;
+    padding: 40px 10%;
+  }
+
+  section.especialidades .flex{
+    gap: 0px ;
   }
 
   .sobre .img-sobre img {
-    margin: 100px 0 0 0 ;
-    width: 350px;
+    margin: 50px 0 0 0;
+    width: 300px;
+  }
+
+  section.sobre{
+    padding: 0px 4% 50px;
   }
 
   section.sobre .flex {
-    gap: 30px;
+    padding: 0px 8%;
+    gap: 0px;
+  }
+
+  .sobre .txt-sobre h2{
+    text-align: center;
+  }
+
+  .sobre .txt-sobre p{
+    font-size: 16px;
+    text-align:justify;
+  }
+
+  .btn-social {
+    text-align: center;
   }
 
   section.portifolio {
-    padding: 20px 4%;
+    padding: 20px 8%;
   }
 
   .img-port {
@@ -574,6 +600,7 @@ footer .btn-social ion-icon:hover {
   }
 
   section.portifolio .flex {
+    margin: 10px 0px;
     align-items: center;
   }
 
