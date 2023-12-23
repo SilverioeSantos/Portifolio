@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <script src="./JavaScript.js" defer></script>
+    <link rel="shortcut icon" href="./assets/logo.ico" />
+  <title>Lucas Silverio</title>
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Logo" width="80px" />
+        </a>
+      </div>
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="index.html"><h1>INICIO</h1></a></li>
+          <li><a href="#especialidades"><h1>ESPECIALIDADES</h1></a></li>
+          <li><a href="#sobre"><h1>SOBRE MIM</h1></a></li>
+          <li><a href="./projetos.html"><h1>PROJETOS</h1></a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-contato">
+        <a href="#contato">
+          <button>CONTATO</button>
+        </a>
+      </div>
+
+      <div class="btn-abrir-menu" id="btn-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+        
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html"><h1>INICIO</h1></a></li>
+            <li><a href="#especialidades"><h1>ESPECIALIDADES</h1></a></li>
+            <li><a href="#sobre"><h1>SOBRE MIM</h1></a></li>
+            <li><a href="./projetos.html"><h1>PROJETOS</h1></a></li>
+            <li><a href="#contato"><h1>CONTATO</h1></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="overlay-menu" id="overlay-menu">
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="topo-site">
+      <div class="interface">
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>Hi 👋 I am Lucas Silverio, nice to meet you!</h1>
+            <p>
+              Tenho 19 anos, já realizei projetos como desenvolvedor WEB
+              Frontend e Full Stack, aprimorando minhas habilidades na criação
+              de sites e tenho atuado como Freelancer nos últimos meses. Mais
+              para baixo ou no menu acima, você poderá ver mais sobre mim e
+              meus trabalhos.
+            </p>
+            <div class="btn-contato">
+              <a href="./projetos.html"><button>MEUS PROJETOS</button></a>
+            </div>
+          </div>
+          <div class="img-topo-site">
+            <img src="./assets/pessoa.png" alt="Foto animada de um programador" width="500px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a id="especialidades"></a>
+    <section class="especialidades">
+
+      <div class="interface">
+        <h2 class="titulo"></a>MINHAS <span>ESPECIALIDADES.</span></h2>
+        <div class="flex">
+          <div class="especialidades-box">
+            <ion-icon name="logo-html5"></ion-icon>
+            <h3>HTML</h3>
+            <p>
+              HTML é a linguagem padrão para criação e estruturação de páginas
+              web. Utilizando tags para definir elementos como títulos,
+              parágrafos, imagens e links, o HTML permite a construção de
+              documentos acessíveis e interativos na internet.
+            </p>
+          </div>
+
+          <div class="especialidades-box">
+            <ion-icon name="logo-css3"></ion-icon>
+            <h3>CSS</h3>
+            <p>
+              CSS é uma linguagem de estilo que trabalha em conjunto com o
+              HTML para controlar a apresentação e o layout de páginas web.
+              Permitindo a definição de cores, fontes, margens e posições, o
+              CSS proporciona um design consistente e agradável aos usuários.
+            </p>
+          </div>
+
+          <div class="especialidades-box">
+            <ion-icon name="logo-javascript"></ion-icon>
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript é uma linguagem de programação de alto nível,
+              essencial para o desenvolvimento web. Executado no lado do
+              cliente, o JavaScript permite a criação de páginas dinâmicas e
+              interativas. Ele lida com eventos e possibilita a comunicação
+              assíncrona com servidores.
+            </p>
+          </div>
+
+          <div class="especialidades-box">
+            <ion-icon name="logo-python"></ion-icon>
+            <h3>Python</h3>
+            <p>
+              Python é uma linguagem de programação versátil e fácil de
+              aprender, adequada para diversos fins, desde desenvolvimento web
+              até análise de dados e inteligência artificial. Sua sintaxe
+              clara e legibilidade, promove a produtividade e a construção
+              rápida de aplicativos robustos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a id="sobre"></a>
+    <section class="sobre">
+      <div class="interface">
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="./assets/foto.jpg" alt="" width="400" />
+          </div>
+          <div class="txt-sobre">
+            <h2>Hello! <span>I'm Lucas Silverio.</span></h2>
+            <p>
+              Desde cedo, venho atuando como desenvolvedor WEB, envolvendo-me em projetos web e atuando como Freelancer recentemente. Minhas habilidades estão centradas na criação de sites, refletindo minha paixão pela tecnologia.
+            </p>
+            <p>
+              Minha paixão pela tecnologia impulsiona meu comprometimento e disciplina como desenvolvedor WEB. Encaro cada projeto como uma oportunidade única para aplicar meu conhecimento técnico, guiado pela busca constante pela excelência. Convido você a explorar minha jornada e descobrir como a combinação de paixão, disciplina e tecnologia é a chave para o meu sucesso no desenvolvimento web.
+            </p>
+            <div class="btn-social">
+              <a href="https://www.instagram.com/llucassilverio/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/lucas-silverio-dos-santos/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="https://github.com/SilverioeSantos" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a id="contato"></a>
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <h1>Contatos</h1>
+        <p>Minhas redes sociais.</p>
+        <div class="btn-social">
+          <a href="https://www.instagram.com/llucassilverio/" target="_blank"><ion-icon
+              name="logo-instagram"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/lucas-silverio-dos-santos/" target="_blank"><ion-icon
+              name="logo-linkedin"></ion-icon></a>
+          <a href="https://github.com/SilverioeSantos" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Inicio</h3>
+        </li>
+        <li>
+          <a href="#especialidades" class="footer-link">Especialidades</a>
+        </li>
+        <li>
+          <a href="#sobre" class="footer-link">Sobre mim</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Portifolio</h3>
+        </li>
+        <li>
+          <a href="./projetos.html" class="footer-link">Projetos</a>
+        </li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Email</h3>
+
+        <p>
+          Entre em contato pelo meu email.
+        </p>
+
+        <div id="email">
+          <p><a href="mailto:lucassilverioesantos@gmail.com">lucassilverioesantos@gmail.com</a>   <ion-icon name="mail"></ion-icon></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_copyright">
+      &#169
+      2023 all rights reserved
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
