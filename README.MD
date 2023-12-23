@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Portifólio é um projeto desenvolvido para uma apresentação sobre mim, meus projetos e trabalhos.
 
-- [Acesse o projeto finalizado, online](https://silverioesantos.github.io/DevLinks/)
+- [Acesse o projeto finalizado, online](https://silverioesantos.github.io/Portifolio/)
 
 
 ## :memo: Licença
